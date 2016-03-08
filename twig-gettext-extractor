@@ -40,6 +40,9 @@ $twig->addExtension(new Symfony\Bridge\Twig\Extension\FormExtension(
 ));
 // You can add more extensions here.
 
+$twig->addExtension(new \Visualonline\Toolbox\Twig\PoeditExtension());
+
+
 array_shift($_SERVER['argv']);
 $addTemplate = false;
 
